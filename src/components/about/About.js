@@ -1,37 +1,48 @@
-import React from 'react'
-import './about.css';
-import CV from '../../assets/Darko Djukic.pdf'
-import AboutImg  from '../../assets/Darko Djukic.webp'
-import Potpis from '../../assets/Potpis.webp'
+import React from "react";
+import "./about.css";
+import CV from "../../assets/Darko Djukic.pdf";
+import AboutImg from "../../assets/Darko Djukic.png";
+import Potpis from "../../assets/Potpis.png";
 const About = () => {
-    
-    return (
-        <section className='about section' id='about'>
-            <h2 className='section__title'>About me</h2>
-            <span className='section__subtitle'>Personal Info</span>
-            <div className='about__container container grid'>
-                <img src={AboutImg} className='about__img' alt='Darko Djkic'/>
+  return (
+    <section className="about section" id="about">
+      <h2 className="section__title">
+        <span>About me</span>
+      </h2>
+      <span className="section__subtitle">Personal Info</span>
+      <div className="about__container container grid">
+        <img src={AboutImg} className="about__img" alt="Darko Djkic" />
 
-                <div className='about__data'>
-                    <h3 className='about__title'>Get to know about more</h3>
-                    <p className='about__descritpion'>
-                        Hello, my name is Darko Djukic and I'm a passionate Front End Developer using web technologies to build amazing products and focusing on solving problems for differnt niches and different industries using the power of technology.
-                        Good interpersonal skills to build good working relationships. Excellent team player with global mindset.
-                        I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me.
-                    </p>
-                    <div>
-                        <img src={Potpis} className='about__img-signature' alt='Potpis'/>
+        <div className="about__data">
+          <h3 className="about__title">
+            A dedicated Front-end Developer based in Uzice, Serbia
+          </h3>
+          <p className="about__descritpion">
+            As a frontend React developer, I am passionate about creating
+            user-friendly web applications. With expertise in React, JavaScript,
+            HTML, and CSS, I specialize in building dynamic interfaces that
+            enhance the user experience. Moreover, I am proficient in
+            version control systems like Git, which allows me to effectively
+            collaborate with teams and manage code repositories. My portfolio
+            showcases projects that demonstrate my skills in developing
+            responsive web applications with clean and sustainable code. I
+            emphasize the importance of design and user experience to create
+            intuitive interfaces that are easy to navigate. I am always ready
+            for teamwork and collaboration with designers and backend
+            developers.
+          </p>
+          <div>
+            <img src={Potpis} className="about__img-signature" alt="Potpis" />
+          </div>
+          <a href={CV} download="Darko Djukic Cv">
+            <button href={CV} className="button button--flex">
+              Resume <i className="uil uil-file"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-                    </div>
-                    <a href={CV} download='Darko Djukic Cv'>
-                        <button href={CV} className='button button--flex'>Resume <i className="uil uil-file"></i></button>
-                    </a>
-                </div>
-            </div>
-
-
-        </section>
-    )
-}
-
-export default About
+export default About;

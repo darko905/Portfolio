@@ -6,12 +6,10 @@
     border-radius: 1.25rem;
 }
 
-
 .skills__title{
-    font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     text-align: center;
-    margin-bottom: var(--mb-1-5);
+    margin-bottom: var(--mb-2);
     color: var(--subtitle-color);
 }
 .skills__box{
@@ -29,12 +27,12 @@
 .skills__data{
     display: flex;
     column-gap: 0.5rem;
+    align-items: center;
+}
+.skills__data img {
+    width: 50px;
 }
 
-.skills .bx{
-    font-size: 2rem;
-    color: var(--title-color);
-}
 
 .skills__name{
     font-size: var(--normal-font-size);
@@ -53,11 +51,13 @@
         padding: 0.5rem;
     }
     .skills__box{
-        flex-direction: column;
         gap: 3rem;
     }
     .skills__group{
         gap: 3rem;
+    }
+    .skills__name{
+        display: none;
     }
 }
 

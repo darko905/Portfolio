@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./header.css";
+import Logo from '../../assets/1.png'
 
 
 
@@ -20,7 +21,9 @@ const Header = () => {
   return (
     <header className='header'>
       <nav className='nav container'>
-        <a href="index.html" className='nav__logo'>D Đ</a>
+        <a href="index.html" className='nav__logo'>
+          <img src={Logo} alt="logo" className='logo'/>
+        </a>
 
         <div className={Toggle ? "nav__menu show-menu": "nav__menu"}>
           <ul className='nav__list grid'>

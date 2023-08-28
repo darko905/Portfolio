@@ -1,10 +1,12 @@
 import React from 'react'
 
 const WorksItem = ({item}) => {
-    return (
+   
+    return ( 
         <div className='work__card' key={item.id}>
             <img src={item.image} alt={item.title} className='work__img'/>
             <h3 className='work__title'>{item.title}</h3>
+            <p className='work__description'>{item.description}</p>
             <div className='work__btn'>
                 <a href={item.link1}>
                     <button className='work__button'>
@@ -20,6 +22,7 @@ const WorksItem = ({item}) => {
             </div>
 
         </div>
+       
     )
 }
 

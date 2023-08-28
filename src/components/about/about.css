@@ -5,7 +5,7 @@
 }
 
 .about__img{
-    width: 300px;
+    width: 350px;
     border: 1.5rem;
     justify-self: center;
 }
@@ -13,9 +13,10 @@
     margin-bottom: var(--mb-2-5);
 }
 .about__descritpion{
-    padding: 0 4rem 0 0;
+    padding:0;
     margin-bottom: var(--mb-2);
     text-align: justify;
+    font-size: var(--h3-font-size);
 }
 .about__img-signature{
     height: 72px;
